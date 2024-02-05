@@ -3,11 +3,11 @@ import mongoose, {Schema} from "mongoose";
 
 const orderSchema = new Schema({
     userId: {
-        type : Schema.Types.ObjectId,
-        ref: "User"
+            type : Schema.Types.ObjectId,
+            ref: "User"
     },
-    totalAmount:{
-        type: Decimal128,
+    amount:{
+        type: Number,
         default: 0
     }
 },
